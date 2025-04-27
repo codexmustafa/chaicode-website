@@ -9,6 +9,7 @@ import DiscordSection from './components/discordSection'
 import TweetCards from './components/tweets/TweetCards'
 import ThousandDevelopers from './components/thousandDevelopers'
 import UdemyCourses from './components/udemyCourses'
+import LearnOnGo from './components/learnOnGo'
 
 
 
@@ -27,6 +28,7 @@ function App() {
         <Stripe/>
         <UdemyCourses/>
         <DiscordSection/>
+        <LearnOnGo/>
       </div>
     </>
   )
