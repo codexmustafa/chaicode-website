@@ -8,6 +8,8 @@ import Stripe from './components/ui/stripe'
 import DiscordSection from './components/discordSection'
 import TweetCards from './components/tweets/TweetCards'
 import ThousandDevelopers from './components/thousandDevelopers'
+import UdemyCourses from './components/udemyCourses'
+
 
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
         <ThousandDevelopers/>
         <BenefitsSection/>
         <Stripe/>
+        <UdemyCourses/>
         <DiscordSection/>
       </div>
     </>
