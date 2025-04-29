@@ -4,7 +4,7 @@ import CtaButton from './ui/ctaButton'
 const DiscordSection = () => {
 
     return (
-        <div className='w-full bg-[#101828] px-20 flex items-center py-20  justify-between overflow-hidden flex-col lg:flex-row'>
+        <div className='w-full bg-[#182230] px-20 flex items-center py-20  justify-between overflow-hidden flex-col lg:flex-row'>
             <div className='flex flex-col py-10 lg:py-0 gap-10 lg:mx-2'>
                 <motion.div
                     initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}

@@ -33,16 +33,19 @@ const NavBar = () => {
             <div className="lg:hidden block text-white" onClick={() => setIsOpen(!isOpen)}>
                 {isOpen ? <X size={28} /> : <Menu size={28} />}
             </div>
-            <div className="Links lg:flex lg:items-center lg:justify-center lg:gap-6 hidden  text-white">
+            <div className="Links lg:flex lg:items-center lg:justify-center lg:gap-6 hidden text-white">
                 {links.map((text, index) => (
-                    <div key={index} className=" flex items-center justify-center gap-2 transition-all hover:text-[#FF7D0C]">
+                    <div key={index} className="flex items-center justify-center gap-2 transition-all hover:text-[#FF7D0C]">
                         <div className="text-white hover:text-[#FF7D0C]">
                             {logoLeft[index]}
                         </div>
-                        <a href="#">{text}</a>
+                        <a href={`#${text.toLowerCase()}`} className="hover:text-[#FF7D0C]">
+                            {text}
+                        </a>
                     </div>
                 ))}
             </div>
+
             <div className="CTA hidden lg:block">
                 <CtaButton />
             </div>
@@ -57,21 +60,22 @@ const NavBar = () => {
                             exit={{ height: 0, opacity: 0 }}
                             transition={{ duration: 0.2, ease: 'easeInOut' }}
                             className='w-full lg:hidden bg-[#111827] absolute z-10 left-0 top-18 h-screen transition-all'>
-                            {
-                                links.map((links, index) => (
-                                    <div key={index} className='flex items-center justify-between w-full' >
-                                        <div className='flex items-center  gap-2 px-6 font-medium border-b border-white tracking-wider py-4 w-full transition-all text-white text-3xl lg:hidden'> <div></div> <motion.a 
-                                        key={index}
-                                        href="#"
-                                        className="text-2xl font-medium hover:text-orange-400"
-                                        initial={{ opacity: 0, y: -30 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        transition={{ delay: 0.2 * index }}
-                                        onClick={() => setIsOpen(false)}
-                                        >{links}</motion.a> </div>
+                            {links.map((link, index) => (
+                                <div key={index} className='flex items-center justify-between w-full'>
+                                    <div className='flex items-center gap-2 px-6 font-medium border-b border-white tracking-wider py-4 w-full transition-all text-white text-3xl lg:hidden'>
+                                        <motion.a
+                                            href={`#${link.toLowerCase()}`}
+                                            className="text-2xl font-medium hover:text-orange-400"
+                                            initial={{ opacity: 0, y: -30 }}
+                                            animate={{ opacity: 1, y: 0 }}
+                                            transition={{ delay: 0.2 * index }}
+                                            onClick={() => setIsOpen(false)}
+                                        >
+                                            {link}
+                                        </motion.a>
                                     </div>
-                                ))
-                            }
+                                </div>
+                            ))}
                         </motion.div>
                     )
                 }

@@ -13,14 +13,14 @@ import MessageText from '../../public/icons/messageText'
 import CurrencyDollar from '../../public/icons/currencyDollar'
 import ArrowLong from '../../public/icons/arrowLong'
 
-const COLORS = ["#FF7D0C", "#FF8C27", "#D76400"]
+const COLORS = ["#FF7D0C", "#FF8C27", "#D76400", "#C45800"]
 const HeroSectionAnimate = () => {
   const color = useMotionValue(COLORS[0])
-  const backgroundImage = useMotionTemplate`radial-gradient(126% 126% at 50% 0%, #111827 40%, ${color})`
+  const backgroundImage = useMotionTemplate`radial-gradient(126% 126% at 50% 0%, #111827 38%, ${color})`
   useEffect(() => {
     animate(color, COLORS, {
       ease: easeInOut,
-      duration: 8,
+      duration: 3,
       repeat: Infinity,
       repeatType: "mirror"
     })
@@ -29,7 +29,7 @@ const HeroSectionAnimate = () => {
   const headline = "Consistency and Community";
   const words = headline.split(" ")
 
-  
+
 
 
   return (
@@ -44,7 +44,7 @@ const HeroSectionAnimate = () => {
       <div className='w-full h-screen flex gap-20 items-center justify-center flex-col'>
         <div className='flex items-center  justify-center gap-6 flex-col'>
           <div className="pill border  text-sm lg:text-[18px] border-[#98A2B3] px-4 py-1 flex items-center bg-[#344054] justify-center gap-4 rounded-full text-white w-fit">Trusted By 1.5M Code Learners <div className='h-2 w-2 rounded-full bg-[#FF7D0C]'></div> </div>
-          <div className="">
+          <div className="text-center lg:flex">
             {words.map((text, index) => (
               <motion.div
                 initial={{ opacity: 0, filter: "blur(10px)", y: 14 }}
@@ -62,10 +62,10 @@ const HeroSectionAnimate = () => {
             An unparalleled learning experience for coding courses.
           </motion.div>
           <motion.div
-          initial={{opacity: 0, filter: "blur(2px)", y:10}}
-          animate={{opacity: 1,  filter: "blur(0px)", y:0}}
-          transition={{duration: 0.3, delay: 0.1 }}
-          className='max-w-[800px] px-2 lg:px-0 text-[16px] tracking-wide text-white/90 lg:text-lg text-center'>
+            initial={{ opacity: 0, filter: "blur(2px)", y: 10 }}
+            animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+            transition={{ duration: 0.3, delay: 0.1 }}
+            className='max-w-[800px] px-2 lg:px-0 text-[16px] tracking-wide text-white/90 lg:text-lg text-center'>
             Content is everywhere, but we provide a learning experience that is unmatched — bounties, peer learning, code reviews, virtual hostel, alumni network, doubt sessions, and group projects.
           </motion.div>
           <div className='cursor-pointer'><CtaButton text={"Explore Cohorts"} /></div>

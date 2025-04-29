@@ -4,9 +4,9 @@ import Book from '../../public/icons/book';
 
 const MarqueeComponent = () => {
     return (
-        <div className='bg-[#111827]  h-[120px] items-center justify-center flex px-20'>
-            <div className='flex text-white tracking-wide flex-col items-end mr-4 text-lg '>
-                <div className='text-nowrap'>Powering the best</div>
+        <div className='bg-[#111827]  h-[120px] items-center justify-center flex px-4 lg:px-20'>
+            <div className='lg:flex hidden w-full lg:text-white lg:tracking-wide lg:flex-col lg:items-end lg:mr-4 lg:text-lg '>
+                <div className='text-nowrap '>Powering the best</div>
                 <div>teams</div>
             </div>
             <Marquee 

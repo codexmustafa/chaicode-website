@@ -11,6 +11,10 @@ import ThousandDevelopers from './components/thousandDevelopers'
 import UdemyCourses from './components/udemyCourses'
 import LearnOnGo from './components/learnOnGo'
 
+import WhyChaiCode from './components/whyChaiCode'
+import Footer from './components/footer/footer'
+import ErrorPage from './components/errorPage'
+import LogoClouds from './components/logoCloud' 
 
 
 function App() {
@@ -19,16 +23,28 @@ function App() {
     <>
       <div className=''>
         <NavBar />
-        <HeroSectionAnimate/>
-        <TweetCards/>
-        <Marquee/>
-        <CohortsSection/>
-        <ThousandDevelopers/>
-        <BenefitsSection/>
-        <Stripe/>
-        <UdemyCourses/>
-        <DiscordSection/>
-        <LearnOnGo/>
+        <HeroSectionAnimate />
+        <TweetCards />
+        <Marquee />
+        <section id='cohorts'>
+          <CohortsSection />
+        </section>
+        <ThousandDevelopers />
+        <BenefitsSection />
+        <Stripe />
+        <section id="docs">
+          <WhyChaiCode />
+        </section>
+        <section id="udemy">
+          <UdemyCourses /> 
+        </section>
+        <LogoClouds />
+        <section id="reviews">
+          <DiscordSection /> 
+        </section>
+        <LearnOnGo />
+        <Footer />
+        {/* <ErrorPage/> */}
       </div>
     </>
   )

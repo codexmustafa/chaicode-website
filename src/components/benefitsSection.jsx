@@ -42,7 +42,7 @@ const BenefitsSection = () => {
   ];
 
   return (
-    <div className='w-full overflow-visible h-full py-10 bg-[#182230] flex flex-col gap-10 pt-20 items-center justify-center text-white'>
+    <div className='w-full overflow-visible h-full lg:gap-10 py-10 bg-[#182230] flex flex-col pt-20 items-center justify-center text-white'>
       <div className="headings flex items-center justify-center gap-4 flex-col">
         <div className="text text-4xl font-semibold ">
           Key <span className='text-[#EF6820]'>Benefits</span> of Cohort
@@ -54,7 +54,7 @@ const BenefitsSection = () => {
           <BenefitsCards key={index} data={item} />
         ))}
       </div>
-      <div className="alumni w-full px-20 flex items-center py-20  justify-between overflow-hidden flex-col lg:flex-row">
+      <div className="alumni w-full lg:px-20 px-2 flex items-center py-20  justify-between overflow-hidden flex-col lg:flex-row">
         <div className="left h-full w-[50%]">
           <div className="flex flex-col gap-6">
             {/* Top Row - 2 Images */}
@@ -72,7 +72,7 @@ const BenefitsSection = () => {
           </div>
         </div>
         <div className="right w-[50%]">
-          <div className="left  text-4xl lg:text-6xl xl:text-8xl tracking-wide leading-[50px] lg:leading-[100px] w-full  lg:max-w-[700px] xl:max-w-[800px] text-white/90 font-semibold">
+          <div className="left text-4xl lg:text-6xl xl:text-8xl tracking-wide leading-[50px] lg:leading-[100px] w-full  lg:max-w-[700px] xl:max-w-[800px] text-white/90 font-semibold">
             Alumni <span className='text-[#EF6820]'>Network</span> and job listings
           </div>
           <div className="description py-10 max-w-[600px]">
