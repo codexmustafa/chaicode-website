@@ -1,6 +1,6 @@
 import React from 'react'
 import Marquee from "react-fast-marquee";
-import Book from '../../public/icons/book';
+import Book from '../assets/icons/book';
 
 const MarqueeComponent = () => {
     return (

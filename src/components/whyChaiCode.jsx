@@ -1,7 +1,7 @@
 import React from 'react'
-import Youtube from '../../public/icons/youtube'
-import Linkedin from '../../public/icons/linkedin'
-import Facebook from '../../public/icons/facebook'
+import Youtube from '../assets/icons/youtube'
+import Linkedin from '../assets/icons/linkedin'
+import Facebook from '../assets/icons/facebook'
 
 const WhyChaiCode = () => {
     const leftContent = [

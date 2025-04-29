@@ -1,17 +1,17 @@
 import React, { useEffect } from 'react'
 import { motion, useMotionTemplate, useMotionValue, animate, easeInOut } from "motion/react"
 import CtaButton from './ui/ctaButton'
-import LeftLine from '../../public/icons/leftLine'
-import RightLine from '../../public/icons/rightLine'
-import File from '../../public/icons/file'
+import LeftLine from '../assets/icons/leftLine'
+import RightLine from '../assets/icons/rightLine'
+import File from '../assets/icons/file'
 import { Tooltip } from 'react-tooltip'
 import 'react-tooltip/dist/react-tooltip.css'
-import Users from '../../public/icons/users'
-import GitPull from '../../public/icons/gitPull'
-import VideoRecorder from '../../public/icons/videoRecorder'
-import MessageText from '../../public/icons/messageText'
-import CurrencyDollar from '../../public/icons/currencyDollar'
-import ArrowLong from '../../public/icons/arrowLong'
+import Users from '../assets/icons/users'
+import GitPull from '../assets/icons/gitPull'
+import VideoRecorder from '../assets/icons/videoRecorder'
+import MessageText from '../assets/icons/messageText'
+import CurrencyDollar from '../assets/icons/currencyDollar'
+import ArrowLong from '../assets/icons/arrowLong'
 
 const COLORS = ["#FF7D0C", "#FF8C27", "#D76400", "#C45800"]
 const HeroSectionAnimate = () => {

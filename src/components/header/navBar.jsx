@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import ChaicodeWhite from '../../../public/icons/chaicode-white'
+import ChaicodeWhite from '../../assets/icons/chaicode-white'
 import CtaButton from '../ui/ctaButton'
 import SecondaryBtn from '../ui/secondaryBtn'
 import { Menu, X } from 'lucide-react'
-import Code from '../../../public/icons/code'
-import Book from '../../../public/icons/book'
-import File from '../../../public/icons/file'
-import Star from '../../../public/icons/star'
+import Code from '../../assets/icons/code'
+import Book from '../../assets/icons/book'
+import File from '../../assets/icons/file'
+import Star from '../../assets/icons/star'
 import { motion, AnimatePresence } from "motion/react"
 
 const NavBar = () => {

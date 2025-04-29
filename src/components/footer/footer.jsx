@@ -1,10 +1,10 @@
 import React from "react";
-import Facebook from "../../../public/icons/facebook";
-import Linkedin from "../../../public/icons/linkedin";
-import Youtube from "../../../public/icons/youtube";
-import Chaicodefooter from "../../../public/icons/chaicodefooter";
+import Facebook from "../../assets/icons/facebook";
+import Linkedin from "../../assets/icons/linkedin";
+import Youtube from "../../assets/icons/youtube";
+import Chaicodefooter from "../../assets/icons/chaicodefooter";
 import { X } from "lucide-react";
-import ChaicodeWhite from "../../../public/icons/chaicode-white";
+import ChaicodeWhite from "../../assets/icons/chaicode-white";
 
 
 const Footer = () => {

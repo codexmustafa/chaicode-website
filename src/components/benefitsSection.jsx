@@ -1,5 +1,10 @@
 import React from 'react'
 import BenefitsCards from './ui/benefitsCards'
+import Image0 from '../assets/image/Image.png'
+import Image1 from '../assets/image/Image-1.png'
+import Image3 from '../assets/image/Image-3.png'
+import Image2 from '../assets/image/Image-2.png'
+import Image4 from '../assets/image/Image-4.png'
 
 const BenefitsSection = () => {
   const data = [
@@ -59,15 +64,15 @@ const BenefitsSection = () => {
           <div className="flex flex-col gap-6">
             {/* Top Row - 2 Images */}
             <div className="flex justify-center items-end gap-6">
-              <img src="/image/Image.png" alt="img1" className="w-[160px] h-[180px] object-cover rounded-sm" />
-              <img src="/image/Image-1.png" alt="img2" className="w-[200px] h-[320px] object-cover rounded-sm" />
+              <img src={Image0} alt="img1" className="w-[160px] h-[180px] object-cover rounded-sm" />
+              <img src={Image1} alt="img2" className="w-[200px] h-[320px] object-cover rounded-sm" />
             </div>
 
             {/* Bottom Row - 3 Images */}
             <div className="flex justify-center gap-6">
-              <img src="/image/Image-3.png" alt="img3" className="w-[140px] h-[180px] object-cover rounded-sm" />
-              <img src="/image/Image-4.png" alt="img4" className="w-[200px] h-[300px] object-cover rounded-sm" />
-              <img src="/image/Image-2.png" alt="img5" className="w-[140px] h-[180px] object-cover rounded-sm" />
+              <img src={Image3}  alt="img3" className="w-[140px] h-[180px] object-cover rounded-sm" />
+              <img src={Image4} alt="img4" className="w-[200px] h-[300px] object-cover rounded-sm" />
+              <img src={Image2} alt="img5" className="w-[140px] h-[180px] object-cover rounded-sm" />
             </div>
           </div>
         </div>

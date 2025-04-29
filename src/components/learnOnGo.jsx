@@ -1,14 +1,14 @@
 import React from 'react'
 import { motion } from 'motion/react'
 import CtaButton from './ui/ctaButton'
-import Rating from '../../public/icons/ratings'
-import PercentageOff from '../../public/icons/offer'
-import Offer from '../../public/icons/offer'
-import Iphone from '../../public/icons/iphone'
-import Iconwithborder from '../../public/icons/iconwithborder'
-import MessageText from '../../public/icons/messageText'
-import AppStore from '../../public/icons/appStore'
-import PlayStore from '../../public/icons/playStore'
+import Rating from '../assets/icons/ratings'
+import PercentageOff from '../assets/icons/offer'
+import Offer from '../assets/icons/offer'
+import Iphone from '../assets/icons/iphone'
+import Iconwithborder from '../assets/icons/iconwithborder'
+import MessageText from '../assets/icons/messageText'
+import AppStore from '../assets/icons/appStore'
+import PlayStore from '../assets/icons/playStore'
 
 const LearnOnGo = () => {
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import CtaButton from './ui/ctaButton';
-import Rating from '../../public/icons/ratings';
-import PercentageOff from '../../public/icons/offer';
-import Offer from '../../public/icons/offer';
+import Rating from '../assets/icons/ratings';
+import PercentageOff from '../assets/icons/offer';
+import Offer from '../assets/icons/offer';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";

@@ -1,5 +1,5 @@
 import React from 'react'
-import MessageText from '../../../public/icons/messageText'
+import MessageText from '../../assets/icons/messageText'
 
 const BenefitsCards = ({ data }) => {
     console.log(data)

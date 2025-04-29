@@ -1,7 +1,7 @@
 import React from 'react'
-import CalendarCheck from '../../../public/icons/calendarCheck';
-import Clock from '../../../public/icons/clock';
-import HelpCircle from '../../../public/icons/helpCircle';
+import CalendarCheck from '../../assets/icons/calendarCheck';
+import Clock from '../../assets/icons/clock';
+import HelpCircle from '../../assets/icons/helpCircle';
 import SecondaryBtn from './secondaryBtn';
 import { ArrowRight } from 'lucide-react';
 
