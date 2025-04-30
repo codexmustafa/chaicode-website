@@ -2,6 +2,7 @@ import React from 'react'
 import Youtube from '../assets/icons/youtube'
 import Linkedin from '../assets/icons/linkedin'
 import Facebook from '../assets/icons/facebook'
+import HiteshSir from '../assets/image/hiteshSir.png'
 
 const WhyChaiCode = () => {
     const leftContent = [
@@ -57,7 +58,7 @@ const WhyChaiCode = () => {
                 </div>
                 <div className="middle lg:min-h-[700px] lg:flex lg:justify-between lg:items-center lg:flex-col rounded-lg bg-white/10  overflow-hidden">
                     <div className="image w-full">
-                        <img src="/image/hiteshSir.png" className='w-full h-full object-cover' alt="Hitesh Sir Picture" />
+                        <img src={HiteshSir} className='w-full h-full object-cover' alt="Hitesh Sir Picture" />
                     </div>
                     <div>
                         <div className=' flex gap-2 flex-col px-4 py-4'>

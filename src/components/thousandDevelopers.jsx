@@ -1,45 +1,47 @@
 import React from 'react'
+import DummyProfile from '../assets/image/dummyProfile.png'
+
 const thousandDevelopers = () => {
   const data = [
     {
       message: "Tailus has transformed the way I develop web applications. Their extensive collection of UI components, blocks, and templates has significantly accelerated my workflow. The flexibility to customize every aspect allows me to create unique user experiences. Tailus is a game-changer for modern web development",
       name: "Shekinah Tshiokufila",
       designation: "Software Engineer",
-      image: "/image/dummyProfile.png"
+      image: "../assets/image/dummyProfile.png"
     },
     {
       message: "Tailus is really extraordinary and very practical, no need to break your head. A real gold mine.",
       name: "Jonathan Yombo",
       designation: "Software Engineer",
-      image: "/image/dummyProfile.png"
+      image: "../assets/image/dummyProfile.png"
 
     },
     {
       message: "Great work on tailfolio template. This is one of the best personal website that I have seen so far!",
       name: "Yucel Faruksahan",
       designation: "Creator, Tailkits",
-      image: "/image/dummyProfile.png"
+      image: "../assets/image/dummyProfile.png"
 
     },
     {
       message: "Great work on tailfolio template. This is one of the best personal website that I have seen so far!",
       name: "Rodrigo Aguilar",
       designation: "Creator, TailwindAwesome",
-      image: "/image/dummyProfile.png"
+      image: "../assets/image/dummyProfile.png"
 
     },
     {
       message: "Great work on tailfolio template. This is one of the best personal website that I have seen so far!",
       name: "Rodrigo Aguilar",
       designation: "Creator, TailwindAwesome",
-      image: "/image/dummyProfile.png"
+      image: "../assets/image/dummyProfile.png"
 
     },
     {
       message: "Great work on tailfolio template. This is one of the best personal website that I have seen so far!",
       name: "Rodrigo Aguilar",
       designation: "Creator, TailwindAwesome",
-      image: "/image/dummyProfile.png"
+      image: "../assets/image/dummyProfile.png"
 
     },
   ]
@@ -58,7 +60,7 @@ const thousandDevelopers = () => {
             </p>
             <div className='flex gap-3 items-center pt-4 pb-3'>
               <div className='w-10 h-10 rounded-full border border-white/10'>
-                <img src="/image/dummyProfile.png" className='object-cover h-full w-full rounded-full' alt="" />
+                <img src={DummyProfile} className='object-cover h-full w-full rounded-full' alt="" />
               </div>
               <div>
                 <h6 className='text-gray-400  italic'>{testimonial.name}</h6>

@@ -4,13 +4,14 @@ import Clock from '../../assets/icons/clock';
 import HelpCircle from '../../assets/icons/helpCircle';
 import SecondaryBtn from './secondaryBtn';
 import { ArrowRight } from 'lucide-react';
+import DummyProfile from '../../assets/image/dummyProfile.png'
 
 const CourseCard = ({ data }) => {
 
     return (
         <div className='max-w-[500px] mb-10 h-full bg-white/10 rounded-lg flex flex-col overflow-hidden'>
             <div className='picture min-h-[30%] max-h-[40%] w-full'>
-                <img src="/image/dummyProfile.png" className='h-full w-full object-cover' alt="" />
+                <img src={DummyProfile} className='h-full w-full object-cover' alt="" />
             </div>
             <div className="content">
                 <div className='p-3'>
