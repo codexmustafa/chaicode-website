@@ -29,7 +29,7 @@ const UdemyCourses = () => {
              {/* <Slider {...settings}>              */}
             <h2 className='text-5xl font-semibold text-[#EF6820] text-center pt-6'>Our Course On Udemy.</h2>
             <p className='text-center text-white text-[20px] mt-4'>Join thousands of students who have transformed their careers with our comprehensive courses</p>
-            <div className='w-full gap-10 lg:px-10 px-4 flex items-center py-20  justify-between overflow-hidden flex-col lg:flex-row'>
+            <div className='w-full gap-10 lg:px-10 px-4 flex items-center py-20  justify-around overflow-hidden flex-col lg:flex-row'>
             <div className="right">
                     <div className='w-[300px] h-[300px] lg:w-[500px] lg:h-[500px] flex items-center justify-center bg-white/10 rounded-lg'>
                         <iframe width="500" height="500" src="https://www.youtube.com/embed/yKTEC1Y5bEQ?si=X5p1Ke4Ts0WKlDWC" className='rounded-lg'></iframe>
