@@ -18,7 +18,7 @@ const DiscordSection = () => {
                     <div>Active coders in Discord</div>
                 </div>
                 <div className='w-fit'>
-                    <a href="https://discord.com/invite/WDrH3zuWFb" target="_blank" rel="noopener noreferrer"><CtaButton text={"Join Discord Now"}/></a>
+                    <a href="https://discord.com" target="_blank" rel="noopener noreferrer"><CtaButton text={"Join Discord Now"}/></a>
                     
                 </div>
             </div>
