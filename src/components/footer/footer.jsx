@@ -68,6 +68,7 @@ const Footer = () => {
                     <Chaicodefooter />
                 </div>
             </div>
+            <a href="/" className="w-9 h-9 rounded-4xl bg-orange-500 text-shadow-amber-900">Scroll top</a>
         </div>
     );
 };

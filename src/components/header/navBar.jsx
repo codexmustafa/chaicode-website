@@ -13,10 +13,11 @@ const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     const links = [
-        "Cohorts",
-        "Udemy",
-        "Docs",
-        "Reviews",
+        {label: "Cohorts", path:"/error"},
+        {label: "Udemy", path:"/error"},
+        {label: "Docs", path:"/error"},
+        {label: "Reviews", path:"/error"},
+        {label: "Error", path:"/error"},
     ]
     const logoLeft = [
         <Code />,
@@ -39,8 +40,8 @@ const NavBar = () => {
                         <div className="text-white hover:text-[#FF7D0C]">
                             {logoLeft[index]}
                         </div>
-                        <a href={`#${text.toLowerCase()}`} className="hover:text-[#FF7D0C]">
-                            {text}
+                        <a href={`#${text.path}`} className="hover:text-[#FF7D0C]">
+                            {text.label}
                         </a>
                     </div>
                 ))}
@@ -64,14 +65,14 @@ const NavBar = () => {
                                 <div key={index} className='flex items-center justify-between w-full'>
                                     <div className='flex items-center gap-2 px-6 font-medium border-b border-white tracking-wider py-4 w-full transition-all text-white text-3xl lg:hidden'>
                                         <motion.a
-                                            href={`#${link.toLowerCase()}`}
+                                            href={`#${text.label.path}`}
                                             className="text-2xl font-medium hover:text-orange-400"
                                             initial={{ opacity: 0, y: -30 }}
                                             animate={{ opacity: 1, y: 0 }}
                                             transition={{ delay: 0.2 * index }}
                                             onClick={() => setIsOpen(false)}
                                         >
-                                            {link}
+                                            {text.label}
                                         </motion.a>
                                     </div>
                                 </div>

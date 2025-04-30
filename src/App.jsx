@@ -25,7 +25,9 @@ function App() {
         <NavBar />
         <HeroSectionAnimate />
         <TweetCards />
+        <Stripe/>
         <Marquee />
+        <Stripe/>
         <section id='cohorts'>
           <CohortsSection />
         </section>
