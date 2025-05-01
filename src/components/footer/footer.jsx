@@ -69,8 +69,7 @@ const Footer = () => {
                     <Chaicodefooter />
                 </div>
             </div>
-            <a href="/" className="w-auto h-auto absolute right-5 rounded-4xl text-5xl  "><FaArrowCircleUp className="bg-orange-500 rounded-4xl"/>
-            </a>
+           
         </div>
     );
 };

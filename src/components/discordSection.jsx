@@ -1,10 +1,10 @@
 import React from 'react'
 import { motion } from 'motion/react'
 import CtaButton from './ui/ctaButton'
-const DiscordSection = () => {
+const DiscordSection = ({ref}) => {
 
     return (
-        <div className='w-full bg-[#182230] px-20 flex items-center py-20  justify-between overflow-hidden flex-col lg:flex-row'>
+        <div ref={ref} className='w-full bg-[#182230] px-20 flex items-center py-20  justify-between overflow-hidden flex-col lg:flex-row'>
             <div className='flex flex-col py-10 lg:py-0 gap-10 lg:mx-2'>
                 <motion.div
                     initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
@@ -18,7 +18,7 @@ const DiscordSection = () => {
                     <div>Active coders in Discord</div>
                 </div>
                 <div className='w-fit'>
-                    <a href="https://discord.com" target="_blank" rel="noopener noreferrer"><CtaButton text={"Join Discord Now"}/></a>
+                    <a href="https://discord.com/invite/WDrH3zuWFb" target="_blank" rel="noopener noreferrer"><CtaButton text={"Join Discord Now"}/></a>
                     
                 </div>
             </div>

@@ -14,7 +14,7 @@ import CurrencyDollar from '../assets/icons/currencyDollar'
 import ArrowLong from '../assets/icons/arrowLong'
 
 const COLORS = ["#FF7D0C", "#FF8C27", "#D76400", "#C45800"]
-const HeroSectionAnimate = () => {
+const HeroSectionAnimate = ({scroll}) => {
   const color = useMotionValue(COLORS[0])
   const backgroundImage = useMotionTemplate`radial-gradient(126% 126% at 50% 0%, #111827 38%, ${color})`
   useEffect(() => {
@@ -29,6 +29,12 @@ const HeroSectionAnimate = () => {
   const headline = "Consistency and Community";
   const words = headline.split(" ")
 
+
+  const handleScroll = () => {
+    if (scrollToMaps?.current) {
+      scrollToMaps.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
 
 
