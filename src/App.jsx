@@ -53,8 +53,6 @@ function App() {
         )}
         <NavBar />
         <HeroSectionAnimate ref={heroSectionRef}  />
-        <NavBar />
-        <HeroSectionAnimate />
         <TweetCards />
         <Stripe/>
         <Marquee />
