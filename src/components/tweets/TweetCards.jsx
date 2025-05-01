@@ -24,12 +24,12 @@ const TweetCards = () => {
   ];
 
   return (
-    <div className="text-center text-white items-center justify-center bg-[#101828] w-full h-full py-8 overflow-hidden">
+    <div className="text-center text-white items-center justify-center bg-[#101828] w-full h-[100vh] py-10 overflow-hidden">
       <div className='flex flex-col gap-2 items-center lg'>
         <div className="text-orange-500 text-2xl font-medium mb-2">Tweet Love</div>
         <div className="mb-6 lg:text-4xl text-xl min-w-[300px] lg:w-full text-center  font-medium">Love that we get from our community</div>
       </div>
-      <div className="flex px-10 gap-4 flex-row lg:flex-wrap lg:justify-center lg:gap-6">
+      <div className="flex px-10 gap-4 lg:flex-row flex-col items-center lg:flex-wrap lg:justify-center lg:gap-6">
         {tweetEmbeds.map((embedHtml, index) => (
           <Card key={index} embedHtml={embedHtml} />
         ))}

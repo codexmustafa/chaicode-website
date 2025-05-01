@@ -5,6 +5,7 @@ import Youtube from "../../assets/icons/youtube";
 import Chaicodefooter from "../../assets/icons/chaicodefooter";
 import { X } from "lucide-react";
 import ChaicodeWhite from "../../assets/icons/chaicode-white";
+import { FaArrowCircleUp } from "react-icons/fa";
 
 
 const Footer = () => {
@@ -68,7 +69,8 @@ const Footer = () => {
                     <Chaicodefooter />
                 </div>
             </div>
-            <a href="/" className="w-9 h-9 rounded-4xl bg-orange-500 text-shadow-amber-900">Scroll top</a>
+            <a href="/" className="w-auto h-auto absolute right-5 rounded-4xl text-5xl  "><FaArrowCircleUp className="bg-orange-500 rounded-4xl"/>
+            </a>
         </div>
     );
 };

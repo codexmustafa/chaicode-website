@@ -52,7 +52,7 @@ const BenefitsSection = () => {
         <div className="text text-4xl font-semibold ">
           Key <span className='text-[#EF6820]'>Benefits</span> of Cohort
         </div>
-        <div className='sidehead '>Orrupti aut temporibus assumenda atque ab, accusamus sit, molestiae veniam laboriosam pariatur.</div>
+        <div className='sidehead text-center py-4'>Orrupti aut temporibus assumenda atque ab, accusamus sit, molestiae veniam laboriosam pariatur.</div>
       </div>
       <div className="flex h-full w-full flex-wrap gap-4 px-10 items-center justify-center">
         {data.map((item, index) => (
@@ -62,15 +62,12 @@ const BenefitsSection = () => {
       <div className="alumni w-full lg:px-20 px-2 flex items-center py-20  justify-between overflow-hidden flex-col lg:flex-row">
         <div className="left h-full w-[50%]">
           <div className="flex flex-col gap-6">
-            {/* Top Row - 2 Images */}
             <div className="flex justify-center items-end gap-6">
               <img src={Image0} alt="img1" className="w-[160px] h-[180px] object-cover rounded-sm" />
               <img src={Image1} alt="img2" className="w-[200px] h-[320px] object-cover rounded-sm" />
             </div>
-
-            {/* Bottom Row - 3 Images */}
             <div className="flex justify-center gap-6">
-              <img src={Image3}  alt="img3" className="w-[140px] h-[180px] object-cover rounded-sm" />
+              <img src={Image3} alt="img3" className="w-[140px] h-[180px] object-cover rounded-sm" />
               <img src={Image4} alt="img4" className="w-[200px] h-[300px] object-cover rounded-sm" />
               <img src={Image2} alt="img5" className="w-[140px] h-[180px] object-cover rounded-sm" />
             </div>
