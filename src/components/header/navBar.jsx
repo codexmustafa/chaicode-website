@@ -40,7 +40,7 @@ const NavBar = () => {
                         <div className="text-white hover:text-[#FF7D0C]">
                             {logoLeft[index]}
                         </div>
-                        <a href={`#${text.path}`} className="hover:text-[#FF7D0C]">
+                        <a href={`${text.path}`} className="hover:text-[#FF7D0C]">
                             {text.label}
                         </a>
                     </div>

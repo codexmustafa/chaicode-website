@@ -74,8 +74,7 @@ function App() {
           <DiscordSection /> 
         </section>
         <LearnOnGo />
-        <Footer />
-        {/* <ErrorPage/> */}
+        <Footer /> 
       </div>
     </>
   )
