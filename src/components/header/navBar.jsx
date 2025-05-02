@@ -13,10 +13,10 @@ const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     const links = [
-        {label: "Cohorts", path:"/error"},
-        {label: "Udemy", path:"/error"},
-        {label: "Docs", path:"/error"},
-        {label: "Reviews", path:"/error"},
+        {label: "Cohorts", path:"/cohorts"},
+        {label: "Udemy", path:"/udemy"},
+        {label: "Docs", path:"/docs"},
+        {label: "Reviews", path:"/review"},
         {label: "Error", path:"/error"},
     ]
     const logoLeft = [
@@ -40,7 +40,7 @@ const NavBar = () => {
                         <div className="text-white hover:text-[#FF7D0C]">
                             {logoLeft[index]}
                         </div>
-                        <a href={`${text.path}`} className="hover:text-[#FF7D0C]">
+                        <a href={text.path} className="hover:text-[#FF7D0C]">
                             {text.label}
                         </a>
                     </div>
@@ -65,7 +65,7 @@ const NavBar = () => {
                                 <div key={index} className='flex items-center justify-between w-full'>
                                     <div className='flex items-center gap-2 px-6 font-medium border-b border-white tracking-wider py-4 w-full transition-all text-white text-3xl lg:hidden'>
                                         <motion.a
-                                            href={`#${text.label.path}`}
+                                           href={text.path}
                                             className="text-2xl font-medium hover:text-orange-400"
                                             initial={{ opacity: 0, y: -30 }}
                                             animate={{ opacity: 1, y: 0 }}

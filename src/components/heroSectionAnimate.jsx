@@ -30,12 +30,7 @@ const HeroSectionAnimate = ({scroll}) => {
   const words = headline.split(" ")
 
 
-  const handleScroll = () => {
-    if (scrollToMaps?.current) {
-      scrollToMaps.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
+ 
 
 
   return (
