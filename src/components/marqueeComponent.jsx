@@ -18,7 +18,7 @@ const MarqueeComponent = () => {
             <div className='text-lg tracking-wider'>Subheading</div>
         </div>
         <Marquee
-            className="h-full justify-between flex cursor-pointer" >
+            className="h-max justify-between flex cursor-pointer" >
             <div className='flex w-full items-center justify-between gap-10'>
                 <Accenture color={"white"}/>
                 <JPMorgan color={"white"}/>
